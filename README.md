@@ -24,3 +24,30 @@ Reference FASTA	Reference genome
 VCF (optional)	Variant calls for allele frequency
 Author
 Kelton Guimaraes — Implementation & Analysis
+
+## Specifications
+
+### Input Requirements
+| File | Format | Required | Notes |
+|------|--------|----------|-------|
+| BAM | Sorted, indexed | ✅ | Any species |
+| VCF | gzipped with AF tag | Optional | For ploidy estimation |
+
+### Minimum System Requirements
+| Resource | Minimum | Recommended |
+|----------|---------|-------------|
+| RAM | 4 GB | 16 GB |
+| Coverage | >10x | >30x |
+| Python | 3.7+ | 3.9+ |
+
+### Compatible Organisms
+✅ Bacteria — *E. coli, K. pneumoniae, M. tuberculosis*  
+✅ Fungi — *C. albicans, A. fumigatus, S. cerevisiae*  
+✅ Plants — *A. thaliana, O. sativa*  
+✅ Animals — *H. sapiens, M. musculus*  
+✅ **Any species with aligned sequencing reads**
+
+### Limitations
+- Detects CNVs by read depth (not breakpoints)
+- Ploidy estimation requires heterozygous variants
+- Single-sample analysis (no tumor-normal pairs)
