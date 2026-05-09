@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from collections import defaultdict
 from datetime import date
 
-BAM = "/home/kelton/microbial_variant_calling/results/alignment/SRR7801919.dedup.bam"
+BAM = "/home/kelton/microbial_variant_calling/results/alignment/SRR7801919.dedup.bam"                                                            #Your file here
 VCF = "/home/kelton/microbial_variant_calling/results/variants/final/SRR7801919.filtered_snps_final.vcf.gz"
 OUTDIR = "results"
 SAMPLE = "SRR7801919"
