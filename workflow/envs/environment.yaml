@@ -1,0 +1,25 @@
+name: sv_analysis
+channels:
+
+conda-forge
+
+bioconda
+
+defaults
+dependencies:
+
+python=3.9
+
+samtools=1.17
+
+bedtools=2.31
+
+matplotlib
+
+numpy
+
+pandas
+
+seaborn
+
+scipy
